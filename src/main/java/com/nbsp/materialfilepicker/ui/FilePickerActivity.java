@@ -249,17 +249,6 @@ public class FilePickerActivity extends Activity implements DirectoryFragment.Fi
 
         data.putExtra(RESULT_FILE_PATH, file.getPath());
 
-        //grant uri permission
-
-        //File f = new File(mStart, file.getParent());
-
-        //File filetogrant = new File(f, file.getName());
-
-        //Uri contenturi = FileProvider.getUriForFile(getApplicationContext(), "com.mzitoapps.boaa.fileprovider",file);
-
-        //data.setData(contenturi);
-        //data.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-
         setResult(RESULT_OK, data);
 
         finish();
